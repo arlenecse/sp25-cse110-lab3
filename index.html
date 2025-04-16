@@ -1,46 +1,143 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Team 8 what Meeting Minutes</title>
+    <title>Team 8 Weekly Meeting Minutes</title>
     <meta charset="UTF-8">
     <meta name="description" content="Meeting Minutes">
     <meta name="author" content="Arlene Garcia">
     <link rel="icon">
     <main>
       <header>
-        <h1> <b>Week 2 Minutes</b> </h1>
-        <strong>Please remember</strong>
-        <p><i>this is important</i></p>
-        <p>You <em> have <em> to finish</em></em></p>
-        <p>To force <br> a line break</p>
+        <h1> <b>Week 2 - Team Ate Weekly Meeting Minutes</b> </h1>
+        <h2> Team Assignment Brainstorming </h2>
+        <h3> Thursday, April 10th 2025 </h3>
+        <img src="https://tse1.mm.bing.net/th?id=OIP.cVIXLzYqw7yfwqgzrWOtGAHaHa&pid=Api&P=0&h=220"> <br>
+        <nav>
+          <a href="#agenda">Meeting Agenda</a> |
+          <a href="#attendance">Attendance Form</a> 
+        </nav> <br>
+        <details>
+          <summary>Attendance List</summary>
+          <ul>
+            <li> Phyo Thant  </li>
+            <li> Arlene Garcia </li>
+            <li> Kiara Singh </li>
+            <li> Minahil Yasar </li>
+            <li> Ashley Vo </li>
+            <li> Chanbin Na </li>
+            <li> Ryan Awal </li>
+            <li> Samson Gebrekidan </li>
+            <li> Shashwat Dudeja </li>
+            <li> Dorjé Pradhan </li>
+            <li> Vy Kiet Dang </li>
+          </ul>
+        </details>
       </header>
-      <nav>
-        <a 
-      </nav>
       <section>
-        <h2> What was covered </h2>
+        <h2 id="agenda"> Meeting Agenda </h2>
         <hr>
-        <ul>
+        <strong> Discussion </strong>
+        <ol>
           <li>Get to know the team</li>
           <li>Fun Facts</li>
-          <li>First Assignment</li>
-        </ul>
-        <ol>
+          <li>Plan First Team Assignment</li>
+        </ol>
+
+        <strong> Unfinished Business from Last Meeting </strong>
+        <ul> 
           <li>Fill out schedule</li>
           <li>Agree on meetup time</li>
-          <li>Do assignment</li>
-        </ol>
+        </ul>
+        <strong> Action Items </strong>
+        <ul>
+          <li> Film Team Video </li>
+          <li> Fill in team introductions </li>
+          <li> Agree on team branding </li>
+        </ul>
+        <strong> Comments/Questions/Concerns </strong> <br>
+        <p> Please remember that the deadline is <b> Sunday, April 13th @ 11:59 </b> </p>
+        <em> Try to finish earlier rather than later </em>
+        <p> There <i>may be extra credit</i> so try to do the best you can </p>
+        <strong> Here is the team mascot that we presented during the meeting. </strong> <br>
+        <img src="media/team-mascot.png" height="400" width="400">
       </section>
+      <section>
+        <audio controls>
+          <source src="media/Recording.m4a" type="audio/mpeg">
+          Your browser does not support the audio tag
+        </audio> <br>
+  
+        <video controls src="media/WIN_20250414_11_49_50_Pro.mp4" width="500"> 
+        </section>
       <footer>
-        <p>Author</p>
+        <h2 id="attendance">Attendance Form</h2>
+        <form action="/action_page.php" method="get">
+          <fieldset>
+            <label for="fname">First name:</label>
+            <input type="text" id="fname" name="fname"> <br>
+            <label for="lname">Last name:</label>
+            <input type="text" id="lname" name="lname"> <br>
+          </fieldset>
+          <fieldset>
+            <p> What days can you meet? </p>
+            <input type="checkbox" id="Mon">
+            <label for="Mon"> Monday </label> <br>
+            <input type="checkbox" id="Tue">
+            <label for="Tue"> Tuesday </label> <br>
+            <input type="checkbox" id="Wed">
+            <label for="Wed"> Wednesday </label> <br>
+            <input type="checkbox" id="Thur">
+            <label for="Thur"> Thursday </label> <br>
+            <input type="checkbox" id="Fri">
+            <label for="Fri"> Friday </label> <br>
+          </fieldset>
+          <fieldset>
+            <p> Can you attend all the meetings? </p>
+            <input type="radio" id="op1"> 
+            <label for="op1"> Yes </label> <br>
+            <input type="radio" id="op2"> 
+            <label for="op2"> No </label> <br>
+          </fieldset>
+          <fieldset>
+            <p> Enter today's date </p>
+            <input type="date"> <br>
+          </fieldset>
+          <fieldset>
+            <label for="languages">Which language are you the most comfortable with?:</label>
+            <input list="languages" name="language" id="language">
+
+            <datalist id="languages">
+              <option value="">
+              <option value="HTML">
+              <option value="CSS">
+              <option value="Javascript">
+            </datalist>
+          </fieldset>
+          <fieldset>
+            <label for="cars">How do you feel about the project so far?:</label>
+
+            <select name="cars" id="cars">
+              <option value=""></option>
+              <option value="volvo">Great</option>
+              <option value="saab">Good</option>
+              <option value="mercedes">Ok</option>
+              <option value="audi">Overwhelmed</option>
+            </select>
+          </fieldset>
+          <fieldset>
+            <label for="w3review">Do you have any questions?</label> <br>
+            <textarea id="w3review" name="w3review" rows="4" cols="50">
+            </textarea>
+          </fieldset>
+          <button type="button">Submit</button>
+        </form>
       </footer>
     </main>
   </head>
   <body>
   <div class="myDiv">
-    <h2> This heading in a div element </h2>
-    <p> My favorite color is <span style="color:pink">blue</span>span> eyes.</p>
+    <p> Our team color is <span style="color:purple">purple</span>.</p>
   </div>
-  
+
   </body>
 </html>
