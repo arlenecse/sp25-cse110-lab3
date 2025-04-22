@@ -1,1 +1,212 @@
+/* Colors */
+:root {
+    --primary-color: #3498db;
+    --secondary-color: rgb(52, 152, 219);
+    --accent-color: hsl(204, 70%, 53%);
+    --text-color: color(display-p3 0.2 0.5 0.8);
+    --mixed-color: color-mix(in srgb, var(--primary-color) 65%, var(--secondary-color));
+}
+
+/* Universal Selector */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Element Selector */
+body {
+    /* Color Examples */
+    color: var(--text-color, #333);  /* Variable with fallback */
+    background-color: #f5f5f5;
+}
+
+/* Units */
+.relative-units {
+    font-size: 2rem;      /* Relative to root font size */
+    margin: 2em;          /* Relative to font size */
+    width: 50vw;          /* Relative to viewport width */
+}
+
+.absolute-units {
+    width: 500px;         
+    margin: 2in;         
+    padding: 1cm;        
+}
+
+/* Box Model */
+.box-model-long {
+    margin-top: 10px;
+    margin-right: 20px;
+    margin-bottom: 10px;
+    margin-left: 20px;
+    
+    padding-top: 15px;
+    padding-right: 25px;
+    padding-bottom: 15px;
+    padding-left: 25px;
+    
+    border-width: 2px;
+    border-style: solid;
+    border-color: #333;
+    border-radius: 8px;
+}
+
+.box-model-short {
+    margin: 10px 20px;
+    padding: 15px 25px;
+    border: 2px solid #333;
+}
+
+/* Auto Margins */
+.center-block {
+    margin: auto;
+}
+
+/* Text */
+.text-styles {
+    color: var(--primary-color);
+    text-decoration: underline;
+    text-align: center;
+}
+
+/* Display */
+.display-examples {
+    display: block;
+}
+
+.inline-example {
+    display: inline-block;
+}
+
+/* Sizing */
+.sizing {
+    height: 300px;
+    width: 100%;
+    max-width: 1200px;
+    min-width: 320px;
+}
+
+/* Position */
+.position-relative {
+    position: relative;
+    top: 10px;
+    left: 20px;
+}
+
+.position-sticky {
+    position: sticky;
+    top: 0;
+}
+
+/* Pseudo-class */
+.button:hover {
+    background-color: var(--secondary-color);
+}
+
+.button:active {
+    transform: scale(0.98);
+}
+
+/* Flexbox Layout */
+.flex-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+/* Grid Layout */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    grid-auto-rows: minmax(100px, auto);
+}
+
+/* Media Queries for Responsiveness */
+@media screen and (max-width: 768px) {
+    .grid-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .grid-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Google Fonts Import */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+.custom-font {
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Class Selector */
+.custom-class {
+    background-color: var(--accent-color);
+}
+
+/* ID Selector */
+#unique-element {
+    border: 3px solid var(--primary-color);
+}
+
+/* Attribute Selector */
+[type="submit"] {
+    background-color: var(--secondary-color);
+}
+
+/* Selector List */
+h1, h2, h3 {
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Combinators */
+/* Descendant Combinator */
+.container p {
+    line-height: 1.6;
+}
+
+/* Child Combinator */
+.parent > .child {
+    margin: 10px;
+}
+
+/* General Sibling Combinator */
+h2 ~ p {
+    margin-top: 1em;
+}
+
+/* Adjacent Sibling Combinator */
+h3 + p {
+    font-weight: bold;
+}
+
+/* Combined Selectors */
+button.primary {
+    background-color: var(--primary-color);
+}
+
+/* New :has() Selector */
+.container:has(> img) {
+    padding: 20px;
+}
+
+/* Nested Selectors */
+.card {
+    & .card-header {
+        background-color: var(--primary-color);
+        
+        & h2 {
+            color: white;
+        }
+    }
+    
+    & .card-body {
+        padding: 1rem;
+    }
+}
 
