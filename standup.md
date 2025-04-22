@@ -1,13 +1,22 @@
-### Standup Meeting
+# Standup Meeting
 ## Topic: Weekly Progress Check-IN
 ## Date: April 22, 2025 9:00 - 10:00 am
 ## Team: Team Ate
 
 ## Attendees
--
+- Phyo Thant  
+- Arlene Garcia 
+- Kiara Singh
+- Minahil Yasar
+- Ashley Vo
+- Chanbin Na 
+- Ryan Awal 
+- Samson Gebrekidan
+- Shashwat Dudeja 
+- Dorjé Pradhan 
+- Vy Kiet Dang 
 
 ## Meeting Agenda
-# Status Check
 1. Current progress on issues 
 2. Overall project progress
 3. Discuss any comments or suggestions
